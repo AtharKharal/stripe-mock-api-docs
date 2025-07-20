@@ -1,0 +1,104 @@
+site_name: Stripe Mock API Docs
+site_description: Comprehensive API reference and developer documentation for a Stripe-inspired payment platform.
+site_url: https://yourusername.github.io/stripe-mock-api-docs/
+repo_url: https://github.com/yourusername/stripe-mock-api-docs
+repo_name: GitHub
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: en
+  palette:
+    - scheme: default
+      primary: deep purple
+      accent: light blue
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to dark mode
+    - scheme: slate
+      primary: deep purple
+      accent: light blue
+      toggle:
+        icon: material/lightbulb
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Fira Code
+  logo: assets/logo.svg
+  favicon: assets/favicon.ico
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.expand
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - content.action.edit
+    - content.tooltips
+    - toc.integrate
+    - header.autohide
+    - footer.social
+
+nav:
+  - Overview: index.md
+  - Getting Started:
+      - Installation: getting-started/installation.md
+      - Authentication: getting-started/authentication.md
+  - APIs:
+      - Charges API: api/charges.md
+      - Customers API: api/customers.md
+      - Webhooks: api/webhooks.md
+  - Guides:
+      - Accepting Payments: guides/payments.md
+      - Testing: guides/testing.md
+  - Reference:
+      - OpenAPI Spec: reference/openapi.md
+      - Error Codes: reference/errors.md
+  - Changelog: changelog.md
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.details
+  - pymdownx.magiclink
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+  - awesome-pages
+  - tags
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/AtharKharal
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/AtharKharal
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/yourhandle
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX
+
+extra_css:
+  - styles/extra.css
+
+extra_javascript:
+  - js/extra.js
+
+copyright: Copyright &copy; 2025 Athar Kharal. All rights reserved.
