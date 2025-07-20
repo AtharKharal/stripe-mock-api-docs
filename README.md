@@ -1,5 +1,3 @@
----
-
 ````markdown
 # Stripe Mock API Documentation
 
