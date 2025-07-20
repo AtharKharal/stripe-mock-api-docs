@@ -1,5 +1,3 @@
-Here's a job-winning, professional `README.md` tailored for your `stripe-mock-api-docs` GitHub repository. It presents your work as a technically sound documentation project, crafted to appeal to hiring managers and recruiters looking for Technical Writers, API Docs specialists, or DocOps Engineers.
-
 ---
 
 ````markdown
