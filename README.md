@@ -1,4 +1,4 @@
-````markdown
+
 # Stripe Mock API Documentation
 
 This repository presents a **mock API documentation site inspired by Stripe**, built using **MkDocs** with the **Material for MkDocs** theme. It showcases modern, developer-focused documentation design, content structuring, and publishing workflows.
