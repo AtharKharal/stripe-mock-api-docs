@@ -8,7 +8,7 @@ The Stripe Mock API follows a consistent, JSON-based error response format to he
 
 All errors are returned with HTTP status codes and a top-level `error` object:
 
-```json
+````json
 {
   "error": {
     "type": "invalid_request_error",
@@ -46,7 +46,7 @@ All errors are returned with HTTP status codes and a top-level `error` object:
 
 ### Missing Parameter
 
-```json
+````json
 {
   "error": {
     "type": "invalid_request_error",
@@ -54,22 +54,22 @@ All errors are returned with HTTP status codes and a top-level `error` object:
     "param": "currency"
   }
 }
-```
+````
 
 ### Invalid API Key
 
-```json
+````json
 {
   "error": {
     "type": "authentication_error",
     "message": "Invalid API Key provided: sk_invalid_key"
   }
 }
-```
+````
 
 ### Card Declined (Mock Scenario)
 
-```json
+````json
 {
   "error": {
     "type": "card_error",
@@ -77,7 +77,7 @@ All errors are returned with HTTP status codes and a top-level `error` object:
     "code": "card_declined"
   }
 }
-```
+````
 
 ---
 
