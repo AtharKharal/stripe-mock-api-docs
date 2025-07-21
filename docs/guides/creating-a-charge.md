@@ -8,7 +8,7 @@ Creating a charge is the core operation of any payment system. This guide explai
 
 All charge creation requests require a valid API key passed via the `Authorization` header:
 
-```http
+````http
 Authorization: Bearer sk_test_51H8J...
 ````
 
@@ -24,11 +24,11 @@ Creates a new payment charge against a customer's payment method.
 
 ### HTTP Request
 
-```http
+````http
 POST /v1/charges
 Content-Type: application/x-www-form-urlencoded
 Authorization: Bearer <API_KEY>
-```
+````
 
 ### Request Parameters
 
@@ -43,20 +43,20 @@ Authorization: Bearer <API_KEY>
 
 ## 🧪 Example Request
 
-```bash
+````bash
 curl https://api.stripe-mock.local/v1/charges \
   -u sk_test_51H8J...: \
   -d amount=2000 \
   -d currency=usd \
   -d source=tok_visa \
   -d description="Test charge for user onboarding"
-```
+````
 
 ---
 
 ## ✅ Example Response
 
-```json
+````json
 {
   "id": "ch_mock_1HX9sz2eZvKYlo2CxYqz",
   "object": "charge",
@@ -75,7 +75,7 @@ curl https://api.stripe-mock.local/v1/charges \
     "exp_year": 2025
   }
 }
-```
+````
 
 ---
 
@@ -95,14 +95,14 @@ For full error semantics, refer to the [Error Codes Reference](../reference/erro
 
 Upon successful charge creation, a `charge.succeeded` event will be dispatched if you have configured a webhook endpoint.
 
-```json
+````json
 {
   "type": "charge.succeeded",
   "data": {
     "object": { ...charge object... }
   }
 }
-```
+````
 
 See [Handling Events](../webhooks/handling-events.md) for event formats and testing instructions.
 

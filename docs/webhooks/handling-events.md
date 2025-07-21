@@ -24,7 +24,7 @@ To receive events:
 2. Register it via the mock admin interface or by setting an environment variable.
 3. Handle incoming JSON POST payloads.
 
-```bash
+````bash
 export MOCK_WEBHOOK_URL=http://localhost:3000/webhook
 ````
 
@@ -34,7 +34,7 @@ export MOCK_WEBHOOK_URL=http://localhost:3000/webhook
 
 Each event payload includes metadata and the full resource object that triggered it.
 
-```json
+````json
 {
   "id": "evt_001",
   "type": "charge.succeeded",
@@ -48,7 +48,7 @@ Each event payload includes metadata and the full resource object that triggered
     }
   }
 }
-```
+````
 
 ### Fields
 
@@ -81,7 +81,7 @@ To ensure the event was sent by the Stripe Mock API:
 2. Compute HMAC-SHA256 using your webhook secret.
 3. Compare the computed hash to the one in the header.
 
-```python
+````python
 import hmac
 import hashlib
 
@@ -91,7 +91,7 @@ signature = request.headers['Mock-Signature']
 
 computed = hmac.new(secret, payload, hashlib.sha256).hexdigest()
 assert computed == signature
-```
+````
 
 ---
 
@@ -106,7 +106,7 @@ The Stripe Mock API simulates real-world reliability behavior:
 
 ## 🧪 Example: Listening to `charge.succeeded`
 
-```javascript
+````javascript
 app.post('/webhook', express.json(), (req, res) => {
   const event = req.body;
 
@@ -117,7 +117,7 @@ app.post('/webhook', express.json(), (req, res) => {
 
   res.status(200).send();
 });
-```
+````
 
 ---
 
