@@ -10,7 +10,7 @@ Authentication is handled through a static, simulated **Secret API Key** include
 
 ### Header Format
 
-```http
+````http
 Authorization: Bearer <your_api_key>
 ````
 

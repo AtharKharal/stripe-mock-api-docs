@@ -59,7 +59,7 @@ This repository includes:
 
 ## 🧭 Navigation Guide
 
-```plaintext
+````plaintext
 stripe-mock-api-docs/
 ├── docs/
 │   ├── index.md
@@ -72,3 +72,4 @@ stripe-mock-api-docs/
 │       └── handling-events.md
 ├── mkdocs.yml
 └── requirements.txt
+````
