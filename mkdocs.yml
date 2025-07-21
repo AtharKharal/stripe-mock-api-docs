@@ -1,7 +1,7 @@
 site_name: Stripe Mock API Docs
 site_description: Comprehensive API reference and developer documentation for a Stripe-inspired payment platform.
-site_url: https://yourusername.github.io/stripe-mock-api-docs/
-repo_url: https://github.com/yourusername/stripe-mock-api-docs
+site_url: https://atharkharal.github.io/stripe-mock-api-docs/
+repo_url: https://github.com/atharkharal/stripe-mock-api-docs
 repo_name: GitHub
 edit_uri: edit/main/docs/
 
@@ -10,17 +10,17 @@ theme:
   language: en
   palette:
     - scheme: default
-      primary: deep purple
-      accent: light blue
       toggle:
-        icon: material/lightbulb-outline
+        icon: material/toggle-switch-off-outline
         name: Switch to dark mode
+      primary: teal
+      accent: purple
     - scheme: slate
-      primary: deep purple
-      accent: light blue
       toggle:
-        icon: material/lightbulb
+        icon: material/toggle-switch
         name: Switch to light mode
+      primary: teal
+      accent: lime
   font:
     text: Roboto
     code: Fira Code
@@ -44,20 +44,13 @@ theme:
 
 nav:
   - Overview: index.md
-  - Getting Started:
-      - Installation: getting-started/installation.md
-      - Authentication: getting-started/authentication.md
-  - APIs:
-      - Charges API: api/charges.md
-      - Customers API: api/customers.md
-      - Webhooks: api/webhooks.md
   - Guides:
-      - Accepting Payments: guides/payments.md
-      - Testing: guides/testing.md
+      - Creating a Charge: guides/creating-a-charge.md
   - Reference:
-      - OpenAPI Spec: reference/openapi.md
+      - Authentication: reference/authentication.md
       - Error Codes: reference/errors.md
-  - Changelog: changelog.md
+  - Webhooks:
+      - Handling Events: webhooks/handling-events.md
 
 markdown_extensions:
   - admonition
@@ -71,8 +64,8 @@ markdown_extensions:
       anchor_linenums: true
   - pymdownx.details
   - pymdownx.magiclink
-  - pymdownx.emoji:
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+  # - pymdownx.emoji:
+  #     emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.tasklist:
       custom_checkbox: true
 
@@ -91,9 +84,27 @@ extra:
       link: https://linkedin.com/in/AtharKharal
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/yourhandle
-  analytics:
-    provider: google
-    property: G-XXXXXXXXXX
+  
+markdown_extensions:
+  - admonition
+  - footnotes
+  - attr_list
+  - codehilite
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.mark
+
+analytics:
+  provider: google
+  property: G-XXXXXXXXXX
 
 extra_css:
   - styles/extra.css
