@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://atharkharal.github.io/stripe-mock-api-docs/</loc>
+         <lastmod>2025-07-26</lastmod>
+    </url>
+    <url>
+         <loc>https://atharkharal.github.io/stripe-mock-api-docs/guides/creating-a-charge/</loc>
+         <lastmod>2025-07-26</lastmod>
+    </url>
+    <url>
+         <loc>https://atharkharal.github.io/stripe-mock-api-docs/reference/authentication/</loc>
+         <lastmod>2025-07-26</lastmod>
+    </url>
+    <url>
+         <loc>https://atharkharal.github.io/stripe-mock-api-docs/reference/errors/</loc>
+         <lastmod>2025-07-26</lastmod>
+    </url>
+    <url>
+         <loc>https://atharkharal.github.io/stripe-mock-api-docs/webhooks/handling-events/</loc>
+         <lastmod>2025-07-26</lastmod>
+    </url>
+</urlset>
